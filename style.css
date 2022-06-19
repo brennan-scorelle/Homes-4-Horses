@@ -1,0 +1,217 @@
+/* universal styles */
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2{
+    font-size: 1.75rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+
+/* navbar */
+
+header{
+    background-color: skyblue;
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+header .logo{
+    display: inline;
+    color:snow;
+    margin: auto 0;
+    font-family: 'Pacifico', cursive;
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: snow;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+nav a:hover{
+    color:deepskyblue;
+}
+
+nav a:active{
+    color: snow;
+}
+
+.spacer{
+    height: 3rem;
+}
+
+@media only screen and (max-width: 700px){
+    nav li{
+        display:block;
+    }
+    nav a{
+        margin: 0;
+        padding: 1rem 5rem;
+    }
+    .spacer{
+        height: 6rem;
+    }
+}
+
+/* hero */
+
+.hero{
+    width: 100%;
+    background-image: url('images/christine-mendoza-HDDZOfX8pLA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 75%;
+}
+
+.mission-statement{
+    background-color: lightgreen;
+    display: block;
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+    width: 25%;
+    min-height:25%;
+    padding: 5rem 3rem;
+    color: snow;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight:bold;
+    line-height: 1.5;
+    opacity: 0.9;
+    border-radius: 0.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .mission-statement{
+        padding: 0.5rem;
+        left: 1rem;
+    }
+    .mission-statement h2{
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+}
+
+/* Horses section */
+
+.horses-section{
+    background-color: whitesmoke;
+    font-family: 'Source Sans Pro';
+    color: skyblue;
+    padding: 2rem;
+}
+
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.card{
+    background-color: skyblue;
+    color: snow;
+    font-weight: 600;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    flex: 0 1 15rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.card img{
+    max-width: 100%;
+    max-height: 75%;
+    padding-bottom: 2rem;
+}
+
+/* Quote Section */
+
+.quote-section{
+    background-color: lightgreen;
+    padding: 3rem;
+}
+
+.quote{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left:10%;
+
+}
+
+.citation{
+    margin-top: 2rem;
+    margin-left: 75%;
+    font-weight: 600;
+}
+
+/* Team Section*/
+
+.team-section{
+    background-color: whitesmoke;
+    font-family: 'Source Sans Pro';
+    color: skyblue;
+    padding: 2rem;
+}
+.team-section h4{
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+
+.contact{
+    background-color: lightgreen;
+    color: snow;
+    font-family: 'Source Sans Pro';
+    padding: 2rem;
+}
+
+.contact-card{
+    padding: 2rem 1rem;
+    font-weight:600;
+}
+
+.contact-card h3{
+    padding-bottom: 2rem;
+}
+
+/* Footer */
+
+footer{
+    padding: 1rem;
+    background-color: lightgrey;
+    font-family: 'Source Sans Pro';
+}
